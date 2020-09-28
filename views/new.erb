@@ -1,0 +1,29 @@
+<%# <form action="/student" method="post">
+  Student Name: <input type="text" name="student[name]">
+  Student Grade: <input type="text" name="student[grade]">
+  Course Name: <input type="text" name="student[course][name]">
+  Course Topic: <input type="text" name="student[course][topic]">
+  <input type="submit">
+</form> %>
+
+<form action="/student" method="post">
+  Student Name: <input type="text" name="student[name]">
+  <br>
+  <br>
+  Student Grade: <input type="text" name="student[grade]">
+  <br>
+  <br>
+  Course Name: <input type="text" name="student[courses][][name]">
+  <br>
+  <br>
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  <br>
+  <br>
+  Course Name: <input type="text" name="student[courses][][name]">
+  <br>
+  <br>
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  <br>
+  <br>
+  <input type="submit">
+</form>
